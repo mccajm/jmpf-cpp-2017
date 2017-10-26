@@ -39,8 +39,8 @@ ForwardEulerOdeSolver.o: 	ForwardEulerOdeSolver.cpp ForwardEulerOdeSolver.hpp
 							g++ -g -c ForwardEulerOdeSolver.cpp
 HigherOrderOdeSolver.o: 	HigherOrderOdeSolver.cpp HigherOrderOdeSolver.hpp
 							g++ -g -c HigherOrderOdeSolver.cpp
-RK4Solver.o: 	RK4Solver.cpp RK4Solver.hpp
+RK4Solver.o: 	            RK4Solver.cpp RK4Solver.hpp
 							g++ -g -c RK4Solver.cpp
 clean:
-				rm -f *.o
+				            rm -f *.o
 										
