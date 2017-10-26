@@ -33,11 +33,6 @@ void RhsCircle(const Pair& v, double t, Pair& dvdt)
     dvdt.y =  v.x;
 }
 
-void RhsVanderPol(const Pair& v, double t, double mu, Pair& dvdt) {
-    dvdt.x = mu * (v.x - pow(v.x, 3) / 3.0 - v.y);
-    dvdt.y = v.x / mu;
-}
-
 /**
  * For a guide to writing and running CxxTest: http://cxxtest.com/guide.html
  *

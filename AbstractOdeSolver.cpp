@@ -75,9 +75,6 @@ void AbstractOdeSolver::SetInitialTimeNumberOfStepsAndFinalTime(double startTime
     mStartTime = startTime;
     mTimeStepSize = time_step;
     mNumberOfTimeSteps = steps;
-
-
-
 }
 
 void AbstractOdeSolver::SetRhsFunction(void (*pFunctionName)(const Pair&, double, Pair&))
@@ -129,6 +126,7 @@ void AbstractOdeSolver::DumpToFile(const std::string& fileName)
     {
         throw Exception("OdePost", "Can't open output file");
     }
+    
     write_output.precision(10);
     for (int i=0; i<mSolutionTrace.size(); i++)
     {
@@ -138,6 +136,4 @@ void AbstractOdeSolver::DumpToFile(const std::string& fileName)
     }
 
     write_output.close();
-
 }
-

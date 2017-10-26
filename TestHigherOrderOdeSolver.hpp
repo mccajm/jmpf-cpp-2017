@@ -23,11 +23,6 @@ void RhsCircle(const Pair& v, double t, Pair& dvdt)
     dvdt.y =  v.x;
 }
 
-void RhsVanderPol(const Pair& v, double t, double mu, Pair& dvdt) {
-    dvdt.x = mu * (v.x - pow(v.x, 3) / 3.0 - v.y);
-    dvdt.y = v.x / mu;
-}
-
 /**
  * This test suite is about testing a higher-order ODE solver (Runge-Kutta, Adams-Bashforth etc.)
  */
