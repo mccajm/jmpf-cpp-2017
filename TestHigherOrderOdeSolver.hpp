@@ -141,7 +141,7 @@ public:
               hi_solver.SetInitialTimeNumberOfStepsAndFinalTime(0.0, num_steps, 2*M_PI /* 2*pi is one circuit */);
               double hi_error = SolveAndCalculateL2ErrorForCircle(&hi_solver);
 
-              write_output << num_steps << "," << hi_error << std::endl;
+              write_output << 2*M_PI/num_steps << "\t" << hi_error << std::endl;
           }
 
           write_output.close();
