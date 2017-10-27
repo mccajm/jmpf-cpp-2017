@@ -24,9 +24,8 @@ void RK4Solver::Solve() {
         throw "The number of time steps is negative";
 	}
 
-	if (mTimeStepSize < 0.0 &&
-		mStartTime < (mStartTime + mNumberOfTimeSteps*mTimeStepSize)) {
-		throw "The timestep size is in the wrong direction";
+	if (mpRhsFunction == NULL) {
+		throw "Please define the right hand side function";
 	}
 
 	Pair v, k1, k2, k3, k4;

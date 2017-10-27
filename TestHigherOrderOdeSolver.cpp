@@ -26,23 +26,23 @@ bool suite_TestHigherOrderOdeSolver_init = false;
 static TestHigherOrderOdeSolver suite_TestHigherOrderOdeSolver;
 
 static CxxTest::List Tests_TestHigherOrderOdeSolver = { 0, 0 };
-CxxTest::StaticSuiteDescription suiteDescription_TestHigherOrderOdeSolver( "TestHigherOrderOdeSolver.hpp", 34, "TestHigherOrderOdeSolver", suite_TestHigherOrderOdeSolver, Tests_TestHigherOrderOdeSolver );
+CxxTest::StaticSuiteDescription suiteDescription_TestHigherOrderOdeSolver( "TestHigherOrderOdeSolver.hpp", 29, "TestHigherOrderOdeSolver", suite_TestHigherOrderOdeSolver, Tests_TestHigherOrderOdeSolver );
 
 static class TestDescription_suite_TestHigherOrderOdeSolver_TestSimpleCircleConvergence : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_TestHigherOrderOdeSolver_TestSimpleCircleConvergence() : CxxTest::RealTestDescription( Tests_TestHigherOrderOdeSolver, suiteDescription_TestHigherOrderOdeSolver, 63, "TestSimpleCircleConvergence" ) {}
+ TestDescription_suite_TestHigherOrderOdeSolver_TestSimpleCircleConvergence() : CxxTest::RealTestDescription( Tests_TestHigherOrderOdeSolver, suiteDescription_TestHigherOrderOdeSolver, 58, "TestSimpleCircleConvergence" ) {}
  void runTest() { suite_TestHigherOrderOdeSolver.TestSimpleCircleConvergence(); }
 } testDescription_suite_TestHigherOrderOdeSolver_TestSimpleCircleConvergence;
 
 static class TestDescription_suite_TestHigherOrderOdeSolver_TestSimpleCircle : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_TestHigherOrderOdeSolver_TestSimpleCircle() : CxxTest::RealTestDescription( Tests_TestHigherOrderOdeSolver, suiteDescription_TestHigherOrderOdeSolver, 97, "TestSimpleCircle" ) {}
+ TestDescription_suite_TestHigherOrderOdeSolver_TestSimpleCircle() : CxxTest::RealTestDescription( Tests_TestHigherOrderOdeSolver, suiteDescription_TestHigherOrderOdeSolver, 92, "TestSimpleCircle" ) {}
  void runTest() { suite_TestHigherOrderOdeSolver.TestSimpleCircle(); }
 } testDescription_suite_TestHigherOrderOdeSolver_TestSimpleCircle;
 
 static class TestDescription_suite_TestHigherOrderOdeSolver_TestErrorofSolver : public CxxTest::RealTestDescription {
 public:
- TestDescription_suite_TestHigherOrderOdeSolver_TestErrorofSolver() : CxxTest::RealTestDescription( Tests_TestHigherOrderOdeSolver, suiteDescription_TestHigherOrderOdeSolver, 134, "TestErrorofSolver" ) {}
+ TestDescription_suite_TestHigherOrderOdeSolver_TestErrorofSolver() : CxxTest::RealTestDescription( Tests_TestHigherOrderOdeSolver, suiteDescription_TestHigherOrderOdeSolver, 129, "TestErrorofSolver" ) {}
  void runTest() { suite_TestHigherOrderOdeSolver.TestErrorofSolver(); }
 } testDescription_suite_TestHigherOrderOdeSolver_TestErrorofSolver;
 

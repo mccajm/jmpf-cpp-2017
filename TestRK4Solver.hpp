@@ -147,11 +147,11 @@ public:
      }
 
      void TestVanderPol() {
-         RK4Solver solver;
          const int num_steps = 10000;
+         RK4Solver solver;
          solver.SetInitialValues(1.0, 0.0);
          solver.SetRhsFunction(&RhsVanderPol); // See top of file for definition
-         solver.SetInitialTimeNumberOfStepsAndFinalTime(0.0, num_steps, 2*M_PI*100 /* 2*pi is one circuit */);
+         solver.SetInitialTimeNumberOfStepsAndFinalTime(0.0, num_steps, 2*M_PI*100);
          solver.Solve();
          solver.DumpToFile("rk4_vanderpol.txt");
      }
